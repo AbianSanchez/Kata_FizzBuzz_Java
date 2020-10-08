@@ -14,4 +14,10 @@ class FizzBuzzTest {
         String ModulusFive = FizzBuzz.checkFizzBuzz(3);
         assertEquals("Fizz",ModulusFive);
     }
+
+    @Test
+    void testModulusThreeAndFive() {
+        String ModulusFive = FizzBuzz.checkFizzBuzz(15);
+        assertEquals("FizzBuzz",ModulusFive);
+    }
 }
