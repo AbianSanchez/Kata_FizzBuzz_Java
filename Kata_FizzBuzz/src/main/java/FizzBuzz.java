@@ -8,7 +8,9 @@ public class FizzBuzz {
         boolean modThree = false;
         if ((value % 5) == 0){ modFive = true;}
         if ((value % 3) == 0){ modThree = true;}
-        if(modFive){
+        if(modFive && modThree){
+            return "FizzBuzz";
+        }else if(modFive){
             return "Buzz";
         } else if (modThree){
             return "Fizz";
